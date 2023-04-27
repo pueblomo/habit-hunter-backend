@@ -5,5 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class AccomplishedHabitModel(
     val tagId: String,
-    val time: String
+    val time: Long,
+    val date: String = ""
 )

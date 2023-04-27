@@ -2,6 +2,7 @@ package com.pueblomo.plugins
 
 import com.pueblomo.schemas.AccomplishedHabits
 import com.pueblomo.schemas.Characters
+import com.pueblomo.schemas.Habits
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
@@ -18,6 +19,7 @@ fun Application.configureDatabases() {
     transaction {
         SchemaUtils.create(Characters)
         SchemaUtils.create(AccomplishedHabits)
+        SchemaUtils.create(Habits)
     }
 }
 
